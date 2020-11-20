@@ -8,16 +8,30 @@
 import SwiftUI
 
 struct Cube: Codable {
+    var name: String
+    var description: String
     var cards: [Card]
+    var archetypes: [Archetype]
 }
 
 struct Card: Codable {
     var name: String
+    var archetypes: [Archetype] = []
+}
+
+struct Archetype: Codable {
+    var name: String
+    var description: String
 }
 
 struct ContentView: View {
 
-    @State var currentCube = Cube(cards: [])
+    @State var currentCube = Cube(
+        name: "",
+        description: "",
+        cards: [],
+        archetypes: []
+    )
     
     var body: some View {
             List(currentCube.cards, id: \.name) { card in
@@ -55,24 +69,47 @@ struct ContentView: View {
     }
     
     func praseCards(data: [String:Any]) -> Cube {
-        let cards = data["data"] as! NSArray
-        debugPrint(cards)
-        let cardNames = cards.map { (card) -> Card in
+        let rawCards = data["data"] as! NSArray
+        debugPrint(rawCards)
+        let cards = rawCards.map { (card) -> Card in
             let castCard = card as AnyObject
             return Card(name: castCard["name"] as! String);
         }
-        debugPrint(cardNames)
+        debugPrint(cards)
         
-        return Cube(cards: cardNames);
+        let name = "Commander Legends"
+        let description = "A draft format that feels like commander!"
+        
+        let archetypes = [
+            Archetype(name: "Token", description: "Make all the creatures"),
+            Archetype(name: "Counters", description: "Pile up counters on creatures"),
+            Archetype(name: "Sacrifice", description: "Sac"),
+        ]
+        
+        return Cube(
+            name: name,
+            description: description,
+            cards: cards,
+            archetypes: archetypes
+        )
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        let demoCube = Cube(cards: [
-            Card(name: "Cool Card"),
-            Card(name: "Other Card")
-        ])
-        ContentView(currentCube: demoCube)
+        ContentView(currentCube: Cube(
+            name: "Commander Legends",
+            description: "A draft format that feels like commander!",
+            cards: [
+                Card(name: "Alena, Kessig Trapper"),
+                Card(name: "Court of Ire"),
+                Card(name: "Emberwilde Captain"),
+            ],
+            archetypes: [
+                Archetype(name: "Token", description: "Make all the creatures"),
+                Archetype(name: "Counters", description: "Pile up counters on creatures"),
+                Archetype(name: "Sacrifice", description: "Sac"),
+            ])
+        )
     }
 }
