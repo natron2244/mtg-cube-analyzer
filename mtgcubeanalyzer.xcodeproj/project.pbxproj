@@ -15,6 +15,11 @@
 		332FA1702566B3A200D0957A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1452566B39F00D0957A /* ContentView.swift */; };
 		332FA1712566B3A200D0957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332FA1462566B3A200D0957A /* Assets.xcassets */; };
 		332FA1722566B3A200D0957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332FA1462566B3A200D0957A /* Assets.xcassets */; };
+		332FA1A32567576800D0957A /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1A22567576800D0957A /* Cube.swift */; };
+		332FA1AD256757EC00D0957A /* ExampleCubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1AC256757EC00D0957A /* ExampleCubeData.swift */; };
+		332FA1B425675AC400D0957A /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1B325675AC400D0957A /* CubeService.swift */; };
+		332FA1DE25675C5600D0957A /* ArchetypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1DD25675C5600D0957A /* ArchetypeRow.swift */; };
+		332FA1DF25675C5600D0957A /* ArchetypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1DD25675C5600D0957A /* ArchetypeRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,10 @@
 		332FA1662566B3A200D0957A /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		332FA16A2566B3A200D0957A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		332FA16C2566B3A200D0957A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		332FA1A22567576800D0957A /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		332FA1AC256757EC00D0957A /* ExampleCubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCubeData.swift; sourceTree = "<group>"; };
+		332FA1B325675AC400D0957A /* CubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeService.swift; sourceTree = "<group>"; };
+		332FA1DD25675C5600D0957A /* ArchetypeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +107,9 @@
 		332FA1432566B39F00D0957A /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				332FA1BD25675B7000D0957A /* Views */,
+				332FA1B225675A9A00D0957A /* Services */,
+				332FA1A12567574100D0957A /* Models */,
 				332FA1442566B39F00D0957A /* mtgcubeanalyzerApp.swift */,
 				332FA1452566B39F00D0957A /* ContentView.swift */,
 				332FA1462566B3A200D0957A /* Assets.xcassets */,
@@ -149,6 +161,31 @@
 				332FA16C2566B3A200D0957A /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		332FA1A12567574100D0957A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				332FA1A22567576800D0957A /* Cube.swift */,
+				332FA1AC256757EC00D0957A /* ExampleCubeData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		332FA1B225675A9A00D0957A /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				332FA1B325675AC400D0957A /* CubeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		332FA1BD25675B7000D0957A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				332FA1DD25675C5600D0957A /* ArchetypeRow.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,7 +346,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				332FA16F2566B3A200D0957A /* ContentView.swift in Sources */,
+				332FA1AD256757EC00D0957A /* ExampleCubeData.swift in Sources */,
+				332FA1B425675AC400D0957A /* CubeService.swift in Sources */,
 				332FA16D2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */,
+				332FA1DE25675C5600D0957A /* ArchetypeRow.swift in Sources */,
+				332FA1A32567576800D0957A /* Cube.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				332FA1702566B3A200D0957A /* ContentView.swift in Sources */,
+				332FA1DF25675C5600D0957A /* ArchetypeRow.swift in Sources */,
 				332FA16E2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
