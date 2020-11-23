@@ -19,7 +19,7 @@ let exampleCube: Cube = Cube(
         Card(id: 2, name: "Emberwilde Captain", archetypes: [
             ArchetypeRating(archetype: "Counters", rating: 4.0),
         ]),
-        Card(id: 2, name: "Clone", archetypes: [
+        Card(id: 3, name: "Clone", archetypes: [
             ArchetypeRating(archetype: "Token", rating: 2.0),
             ArchetypeRating(archetype: "Counters", rating: 2.0),
             ArchetypeRating(archetype: "Sacrifice", rating: 2.0),
