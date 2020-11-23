@@ -13,12 +13,17 @@ struct ContentView: View {
     
     var body: some View {
         // Nathan: Pickup here, adding archtypes
-            List(currentCube.cards, id: \.name) { card in
-                VStack(alignment: .leading) {
-                    Text(card.name)
-                        .font(.headline)
-                }
-            }
+        // Nathan: Look at tail wind
+        ArchetypeList()
+//            List(currentCube.cards, id: \.name) { card in
+//                VStack(alignment: .leading) {
+//                    Text(card.name)
+//                        .font(.headline)
+//                    #if os(macOS)
+//                    Divider()
+//                    #endif
+//                }
+//            }
         }
 }
 

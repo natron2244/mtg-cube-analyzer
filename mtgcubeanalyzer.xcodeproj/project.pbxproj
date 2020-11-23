@@ -20,6 +20,17 @@
 		332FA1B425675AC400D0957A /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1B325675AC400D0957A /* CubeService.swift */; };
 		332FA1DE25675C5600D0957A /* ArchetypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1DD25675C5600D0957A /* ArchetypeRow.swift */; };
 		332FA1DF25675C5600D0957A /* ArchetypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1DD25675C5600D0957A /* ArchetypeRow.swift */; };
+		334A3D9D2567EFEF007DA236 /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1B325675AC400D0957A /* CubeService.swift */; };
+		334A3D9E2567EFEF007DA236 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1A22567576800D0957A /* Cube.swift */; };
+		334A3D9F2567EFEF007DA236 /* ExampleCubeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1AC256757EC00D0957A /* ExampleCubeData.swift */; };
+		334A3DB0256B3E9F007DA236 /* ArchetypeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */; };
+		334A3DB1256B3E9F007DA236 /* ArchetypeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */; };
+		334A3DB7256B4326007DA236 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DB6256B4326007DA236 /* CardList.swift */; };
+		334A3DB8256B4326007DA236 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DB6256B4326007DA236 /* CardList.swift */; };
+		334A3DBE256B434E007DA236 /* CardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DBD256B434E007DA236 /* CardDetail.swift */; };
+		334A3DBF256B434E007DA236 /* CardDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DBD256B434E007DA236 /* CardDetail.swift */; };
+		334A3DC5256B4A85007DA236 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DC4256B4A85007DA236 /* CardRow.swift */; };
+		334A3DC6256B4A85007DA236 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DC4256B4A85007DA236 /* CardRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,10 @@
 		332FA1AC256757EC00D0957A /* ExampleCubeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleCubeData.swift; sourceTree = "<group>"; };
 		332FA1B325675AC400D0957A /* CubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeService.swift; sourceTree = "<group>"; };
 		332FA1DD25675C5600D0957A /* ArchetypeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeRow.swift; sourceTree = "<group>"; };
+		334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeList.swift; sourceTree = "<group>"; };
+		334A3DB6256B4326007DA236 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		334A3DBD256B434E007DA236 /* CardDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetail.swift; sourceTree = "<group>"; };
+		334A3DC4256B4A85007DA236 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +199,10 @@
 			isa = PBXGroup;
 			children = (
 				332FA1DD25675C5600D0957A /* ArchetypeRow.swift */,
+				334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */,
+				334A3DB6256B4326007DA236 /* CardList.swift */,
+				334A3DBD256B434E007DA236 /* CardDetail.swift */,
+				334A3DC4256B4A85007DA236 /* CardRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -347,10 +366,14 @@
 			files = (
 				332FA16F2566B3A200D0957A /* ContentView.swift in Sources */,
 				332FA1AD256757EC00D0957A /* ExampleCubeData.swift in Sources */,
+				334A3DC5256B4A85007DA236 /* CardRow.swift in Sources */,
 				332FA1B425675AC400D0957A /* CubeService.swift in Sources */,
 				332FA16D2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */,
+				334A3DB0256B3E9F007DA236 /* ArchetypeList.swift in Sources */,
 				332FA1DE25675C5600D0957A /* ArchetypeRow.swift in Sources */,
 				332FA1A32567576800D0957A /* Cube.swift in Sources */,
+				334A3DB7256B4326007DA236 /* CardList.swift in Sources */,
+				334A3DBE256B434E007DA236 /* CardDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,9 +381,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				334A3D9D2567EFEF007DA236 /* CubeService.swift in Sources */,
+				334A3D9E2567EFEF007DA236 /* Cube.swift in Sources */,
+				334A3DC6256B4A85007DA236 /* CardRow.swift in Sources */,
+				334A3D9F2567EFEF007DA236 /* ExampleCubeData.swift in Sources */,
 				332FA1702566B3A200D0957A /* ContentView.swift in Sources */,
+				334A3DB1256B3E9F007DA236 /* ArchetypeList.swift in Sources */,
 				332FA1DF25675C5600D0957A /* ArchetypeRow.swift in Sources */,
 				332FA16E2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */,
+				334A3DB8256B4326007DA236 /* CardList.swift in Sources */,
+				334A3DBF256B434E007DA236 /* CardDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

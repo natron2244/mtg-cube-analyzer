@@ -14,12 +14,20 @@ struct Cube: Codable {
     var archetypes: [Archetype]
 }
 
-struct Card: Codable {
+// Nathan: Should things have ids?
+struct Card: Codable, Identifiable {
+    var id: Int
     var name: String
-    var archetypes: [Archetype] = []
+    var archetypes: [ArchetypeRating] = []
 }
 
-struct Archetype: Codable {
+struct Archetype: Codable, Identifiable {
+    var id: Int
     var name: String
     var description: String
+}
+
+struct ArchetypeRating: Codable {
+    var archetype: String
+    var rating: Double 
 }
