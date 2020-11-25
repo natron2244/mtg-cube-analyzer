@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct CardList: View {
+    var title: String = ""
     var cards: [Card]
     
     var body: some View {
@@ -16,8 +17,7 @@ struct CardList: View {
                 CardRow(card: card)
             }
         }
-//            Nathan: What to do in this case
-//            .navigationBarTitle(Text(title))
+        .navigationTitle(title)
     }
 }
 
