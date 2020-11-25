@@ -11,7 +11,7 @@ import SwiftUI
 struct mtgcubeanalyzerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ArchetypeList().environmentObject(UserData())
         }
     }
 }

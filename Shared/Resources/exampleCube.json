@@ -1,0 +1,70 @@
+{
+   "name":"Commander Legends",
+   "description":"A draft format that feels like commander!",
+   "cards":[
+      {
+         "id":0,
+         "name":"Alena, Kessig Trapper",
+         "archetypes":[
+            {
+               "archetype":"Token",
+               "rating":5.0
+            },
+            {
+               "archetype":"Sacrifice",
+               "rating":3.0
+            }
+         ]
+      },
+      {
+         "id":1,
+         "name":"Court of Ire",
+         "archetypes":[]
+      },
+      {
+         "id":2,
+         "name":"Emberwilde Captain",
+         "archetypes":[
+            {
+               "archetype":"Counters",
+               "rating":4.0
+            }
+         ]
+      },
+      {
+         "id":3,
+         "name":"Clone",
+         "archetypes":[
+            {
+               "archetype":"Token",
+               "rating":2.0
+            },
+            {
+               "archetype":"Counters",
+               "rating":2.0
+            },
+            {
+               "archetype":"Sacrifice",
+               "rating":2.0
+            }
+         ]
+      }
+   ],
+   "archetypes":[
+      {
+         "id":0,
+         "name":"Token",
+         "description":"Make all the creatures"
+      },
+      {
+         "id":1,
+         "name":"Counters",
+         "description":"Pile up counters on creatures"
+      },
+      {
+         "id":2,
+         "name":"Sacrifice",
+         "description":"Sac"
+      }
+   ]
+}
