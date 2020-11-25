@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct ArchetypeList: View {
-//    @EnvironmentObject private var cube: Cube
+    @EnvironmentObject private var userData: UserData
     
     var body: some View {
         NavigationView {
-            List( exampleCube.archetypes ) { archetype in
+            List( userData.cube.archetypes ) { archetype in
                 NavigationLink(destination: CardList( cards: self.cardsForArchetpye(targetArchetype: archetype.name))) {
                     ArchetypeRow(archetype: archetype)
                 }
@@ -23,12 +23,12 @@ struct ArchetypeList: View {
     }
     
     func cardsForArchetpye(targetArchetype: String) -> [Card] {
-        return exampleCube.cards.filter{ $0.archetypes.contains(where: { archetype in archetype.archetype == targetArchetype } ) }
+        return userData.cube.cards.filter{ $0.archetypes.contains(where: { archetype in archetype.archetype == targetArchetype } ) }
     }
 }
 
 struct ArchetypeList_Previews: PreviewProvider {
     static var previews: some View {
-        ArchetypeList()
+        ArchetypeList().environmentObject(UserData())
     }
 }
