@@ -1,4 +1,4 @@
-# mtg-cube-analyzer
+# MTG Cube Analyzer
 A Mac/iOS app to analysis a MTG cube's archetypes. The idea behind the project is to have an app that lets you evaluate how cards are rated in the different archetypes.
 
 
