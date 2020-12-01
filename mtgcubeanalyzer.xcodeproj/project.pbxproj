@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		331F360E25754AC100E42D73 /* Scryfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F360D25754AC100E42D73 /* Scryfall.swift */; };
+		331F360F25754AC100E42D73 /* Scryfall.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F360D25754AC100E42D73 /* Scryfall.swift */; };
+		331F361D257578E900E42D73 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F361C257578E900E42D73 /* APIClient.swift */; };
+		331F361E257578E900E42D73 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F361C257578E900E42D73 /* APIClient.swift */; };
+		331F362425768DFA00E42D73 /* CardSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F362325768DFA00E42D73 /* CardSearchViewModel.swift */; };
+		331F362525768DFA00E42D73 /* CardSearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F362325768DFA00E42D73 /* CardSearchViewModel.swift */; };
+		331F362B25768E4600E42D73 /* ScryFallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F362A25768E4600E42D73 /* ScryFallAPI.swift */; };
+		331F362C25768E4600E42D73 /* ScryFallAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F362A25768E4600E42D73 /* ScryFallAPI.swift */; };
+		331F3636257690CA00E42D73 /* SearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F3635257690CA00E42D73 /* SearchForm.swift */; };
+		331F3637257690CA00E42D73 /* SearchForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331F3635257690CA00E42D73 /* SearchForm.swift */; };
 		332FA1602566B3A200D0957A /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA15F2566B3A200D0957A /* Tests_iOS.swift */; };
 		332FA16B2566B3A200D0957A /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA16A2566B3A200D0957A /* Tests_macOS.swift */; };
 		332FA16D2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1442566B39F00D0957A /* mtgcubeanalyzerApp.swift */; };
@@ -53,6 +63,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		331F360D25754AC100E42D73 /* Scryfall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scryfall.swift; sourceTree = "<group>"; };
+		331F361C257578E900E42D73 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		331F362325768DFA00E42D73 /* CardSearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSearchViewModel.swift; sourceTree = "<group>"; };
+		331F362A25768E4600E42D73 /* ScryFallAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScryFallAPI.swift; sourceTree = "<group>"; };
+		331F3635257690CA00E42D73 /* SearchForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchForm.swift; sourceTree = "<group>"; };
 		332FA1442566B39F00D0957A /* mtgcubeanalyzerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mtgcubeanalyzerApp.swift; sourceTree = "<group>"; };
 		332FA1462566B3A200D0957A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		332FA14B2566B3A200D0957A /* mtgcubeanalyzer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mtgcubeanalyzer.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -187,6 +202,8 @@
 				332FA1A22567576800D0957A /* Cube.swift */,
 				3380ACB2256DE197006C51E1 /* UserData.swift */,
 				3380ACC9256DE5AC006C51E1 /* Data.swift */,
+				331F360D25754AC100E42D73 /* Scryfall.swift */,
+				331F362325768DFA00E42D73 /* CardSearchViewModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -195,6 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				332FA1B325675AC400D0957A /* CubeService.swift */,
+				331F361C257578E900E42D73 /* APIClient.swift */,
+				331F362A25768E4600E42D73 /* ScryFallAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -207,6 +226,7 @@
 				334A3DB6256B4326007DA236 /* CardList.swift */,
 				334A3DBD256B434E007DA236 /* CardDetail.swift */,
 				334A3DC4256B4A85007DA236 /* CardRow.swift */,
+				331F3635257690CA00E42D73 /* SearchForm.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -384,9 +404,14 @@
 				3380ACCA256DE5AC006C51E1 /* Data.swift in Sources */,
 				3380ACB3256DE197006C51E1 /* UserData.swift in Sources */,
 				334A3DB0256B3E9F007DA236 /* ArchetypeList.swift in Sources */,
+				331F362425768DFA00E42D73 /* CardSearchViewModel.swift in Sources */,
 				332FA1DE25675C5600D0957A /* ArchetypeRow.swift in Sources */,
+				331F3636257690CA00E42D73 /* SearchForm.swift in Sources */,
 				332FA1A32567576800D0957A /* Cube.swift in Sources */,
+				331F361D257578E900E42D73 /* APIClient.swift in Sources */,
+				331F360E25754AC100E42D73 /* Scryfall.swift in Sources */,
 				334A3DB7256B4326007DA236 /* CardList.swift in Sources */,
+				331F362B25768E4600E42D73 /* ScryFallAPI.swift in Sources */,
 				334A3DBE256B434E007DA236 /* CardDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,9 +426,14 @@
 				3380ACCB256DE5AC006C51E1 /* Data.swift in Sources */,
 				3380ACB4256DE197006C51E1 /* UserData.swift in Sources */,
 				334A3DB1256B3E9F007DA236 /* ArchetypeList.swift in Sources */,
+				331F362525768DFA00E42D73 /* CardSearchViewModel.swift in Sources */,
 				332FA1DF25675C5600D0957A /* ArchetypeRow.swift in Sources */,
+				331F3637257690CA00E42D73 /* SearchForm.swift in Sources */,
 				332FA16E2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */,
+				331F361E257578E900E42D73 /* APIClient.swift in Sources */,
+				331F360F25754AC100E42D73 /* Scryfall.swift in Sources */,
 				334A3DB8256B4326007DA236 /* CardList.swift in Sources */,
+				331F362C25768E4600E42D73 /* ScryFallAPI.swift in Sources */,
 				334A3DBF256B434E007DA236 /* CardDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

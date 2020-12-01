@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ArchetypeList: View {
     @EnvironmentObject private var userData: UserData
-        
+    
+    var addCardButton: some View = NavigationLink(destination: SearchForm()) { Image(systemName: "plus")
+    }
+    
     var body: some View {
         NavigationView {
             List( userData.cube.archetypes ) { archetype in
@@ -20,19 +23,13 @@ struct ArchetypeList: View {
                 }
             }
             .navigationTitle(userData.cube.name)
+            .navigationBarItems(trailing: addCardButton)
+            
         }
     }
     
     func cardsForArchetpye(targetArchetype: String) -> [Card] {
         return userData.cube.cards.filter{ $0.archetypes.contains(where: { archetype in archetype.archetype == targetArchetype } ) }
-    }
-
-    
-    func addCard() -> Void {
-        let newCard = Card(id: 4, name: "Here", archetypes: [
-            ArchetypeRating(archetype: "Token", rating: 4.0)
-        ])
-        userData.cube.cards.append(newCard)
     }
 }
 

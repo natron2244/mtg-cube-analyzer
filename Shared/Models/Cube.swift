@@ -14,7 +14,6 @@ struct Cube: Codable {
     var archetypes: [Archetype]
 }
 
-// Nathan: Should things have ids?
 struct Card: Codable, Identifiable {
     var id: Int
     var name: String
