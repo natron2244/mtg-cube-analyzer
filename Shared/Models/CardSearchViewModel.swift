@@ -10,7 +10,7 @@ import Combine
 
 class CardSearchViewModel: ObservableObject {
     
-    @Published var cards: [ScryFallCard] = []
+    @Published var cards: [Card] = []
     var cancellationToken: AnyCancellable?
 }
 

@@ -24,10 +24,8 @@
 		332FA1712566B3A200D0957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332FA1462566B3A200D0957A /* Assets.xcassets */; };
 		332FA1722566B3A200D0957A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 332FA1462566B3A200D0957A /* Assets.xcassets */; };
 		332FA1A32567576800D0957A /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1A22567576800D0957A /* Cube.swift */; };
-		332FA1B425675AC400D0957A /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1B325675AC400D0957A /* CubeService.swift */; };
 		332FA1DE25675C5600D0957A /* ArchetypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1DD25675C5600D0957A /* ArchetypeRow.swift */; };
 		332FA1DF25675C5600D0957A /* ArchetypeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1DD25675C5600D0957A /* ArchetypeRow.swift */; };
-		334A3D9D2567EFEF007DA236 /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1B325675AC400D0957A /* CubeService.swift */; };
 		334A3D9E2567EFEF007DA236 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = 332FA1A22567576800D0957A /* Cube.swift */; };
 		334A3DB0256B3E9F007DA236 /* ArchetypeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */; };
 		334A3DB1256B3E9F007DA236 /* ArchetypeList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */; };
@@ -82,7 +80,6 @@
 		332FA16A2566B3A200D0957A /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		332FA16C2566B3A200D0957A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		332FA1A22567576800D0957A /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
-		332FA1B325675AC400D0957A /* CubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeService.swift; sourceTree = "<group>"; };
 		332FA1DD25675C5600D0957A /* ArchetypeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeRow.swift; sourceTree = "<group>"; };
 		334A3DAF256B3E9F007DA236 /* ArchetypeList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchetypeList.swift; sourceTree = "<group>"; };
 		334A3DB6256B4326007DA236 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
@@ -211,7 +208,6 @@
 		332FA1B225675A9A00D0957A /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				332FA1B325675AC400D0957A /* CubeService.swift */,
 				331F361C257578E900E42D73 /* APIClient.swift */,
 				331F362A25768E4600E42D73 /* ScryFallAPI.swift */,
 			);
@@ -399,7 +395,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				334A3DC5256B4A85007DA236 /* CardRow.swift in Sources */,
-				332FA1B425675AC400D0957A /* CubeService.swift in Sources */,
 				332FA16D2566B3A200D0957A /* mtgcubeanalyzerApp.swift in Sources */,
 				3380ACCA256DE5AC006C51E1 /* Data.swift in Sources */,
 				3380ACB3256DE197006C51E1 /* UserData.swift in Sources */,
@@ -420,7 +415,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				334A3D9D2567EFEF007DA236 /* CubeService.swift in Sources */,
 				334A3D9E2567EFEF007DA236 /* Cube.swift in Sources */,
 				334A3DC6256B4A85007DA236 /* CardRow.swift in Sources */,
 				3380ACCB256DE5AC006C51E1 /* Data.swift in Sources */,

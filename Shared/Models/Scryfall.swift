@@ -8,22 +8,9 @@
 import Foundation
 
 struct ScryFallCardResponse: Codable {
-    let cards: [ScryFallCard]
+    let cards: [Card]
 
     enum CodingKeys: String, CodingKey {
         case cards = "data"
-    }
-}
-
-struct ScryFallCard: Codable, Identifiable {
-    var id = UUID()
-    let scryFallId: String
-    let name: String
-    let oracleText: String
-
-    enum CodingKeys: String, CodingKey {
-        case scryFallId = "id"
-        case name
-        case oracleText = "oracle_text"
     }
 }

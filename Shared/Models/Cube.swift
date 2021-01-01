@@ -15,13 +15,21 @@ struct Cube: Codable {
 }
 
 struct Card: Codable, Identifiable {
-    var id: Int
-    var name: String
+    var id = UUID()
+    let scryFallId: String
+    let name: String
+    let oracleText: String
     var archetypes: [ArchetypeRating] = []
+    
+    enum CodingKeys: String, CodingKey {
+        case scryFallId = "id"
+        case name
+        case oracleText = "oracle_text"
+    }
 }
 
 struct Archetype: Codable, Identifiable {
-    var id: Int
+    var id = UUID()
     var name: String
     var description: String
 }
